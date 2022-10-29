@@ -98,6 +98,21 @@
         <p>Quando utilizamos a tag (a) significa que queremos colocar um link no elemento. Nesse caso, o atributo da tag a sera o (href).<br> Também temos os atributos <strong>(class) e (id),</strong> dentre outros. </p>
         <small><a href="#indice">Voltar ao Indice</a></small>
     </ul>
+    <h1>Deseja realizar um cadastro no nosso Site?</h1>
+    <h3>FORMULÁRIO DE CADASTRO</h3>
+    <form 
+        name="cadastro" autocomplete="on" onsubmit="alert('SUCESSO NO CADASTRO')" method="POST" action="https://meusite.com.br/cadastro">
+        <label> Nome:* </label><input type="text" name="nome" /><br>
+        <label>Idade:* </label><input type="number" min="0" max="99" name="age"><br> 
+        <label for="itel">WhatsApp:* </label>
+        <input type="tel" name="tel" id="itel" autocomplete="tel"
+        pattern="^\(\d{2}\)\d{5}-\d{4}$" required placeholder="(12)34567-8901" ><br>
+        <label for="tect">Menssagem: </label> <br>
+        <textarea name="menssagem" id="" cols="50" rows="10"></textarea><br>
+        <button type="submit">Enviar</button>
+        <button type="reset, submit">Cancelar</button> 
+
+    </form>
     <footer style="background-color: #ccfae1">
         <h2>Referencias</h2>
         <ul>
